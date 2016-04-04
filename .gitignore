@@ -1,0 +1,11 @@
+/auto-save-list/
+/.cask/
+
+/tmp/*
+!/tmp/.keep
+
+/elpa/*
+!/elpa/.keep
+
+projectile.cache
+projectile-bookmarks.eld
