@@ -155,6 +155,15 @@
 
 	    (add-hook 'enh-ruby-mode-hook 'minitest-ruby-mode-hook)))
 
+(use-package rspec-mode
+  :ensure t
+  :defer t
+  :config (progn
+	    (defun rspec-ruby-mode-hook ()
+	      (tester-init-test-run #'rspec-run-single-file "_spec.rb$")
+	      (tester-init-test-suite-run #'rake-test))
+	    (add-hook 'enh-ruby-mode-hook 'rspec-ruby-mode-hook)))
+
 (use-package rbenv
   :ensure t
   :defer t

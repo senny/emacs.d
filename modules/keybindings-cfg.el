@@ -119,6 +119,7 @@
 (global-set-key (kbd "C-c C-k") 'senny-comment-or-uncomment-region-or-line)
 (global-set-key (kbd "C-c k") 'kill-compilation)
 (global-set-key (kbd "C-c w") 'remove-trailing-whitespace-mode)
+(global-set-key (kbd "C-c C-w") 'whitespace-mode)
 
 ;;;; Searching
 
