@@ -140,6 +140,12 @@
 		  enh-ruby-hanging-indent-level 0)
 	    (setq ruby-insert-encoding-magic-comment nil)))
 
+(use-package rubocop
+  :ensure t
+  :defer t
+  :init (add-hook 'ruby-mode-hook 'rubocop-mode))
+
+
 (use-package minitest
   :load-path "~/Projects/minitest-emacs"
   :config (progn
