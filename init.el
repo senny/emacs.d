@@ -144,7 +144,7 @@
 	    (setq enh-ruby-indent-level 2
 		  enh-ruby-deep-indent-paren nil
 		  enh-ruby-bounce-deep-indent t
-		  enh-ruby-hanging-indent-level 0)
+		  enh-ruby-hanging-indent-level 2)
 	    (setq ruby-insert-encoding-magic-comment nil)))
 
 (use-package rubocop
