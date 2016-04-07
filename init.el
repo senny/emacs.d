@@ -194,3 +194,7 @@
   :ensure t
   :defer 2
   :bind (("C-x g" . magit-status)))
+
+(use-package slim-mode
+  :ensure t
+  :mode ("\\.slim\\'" . slim-mode))
