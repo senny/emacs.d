@@ -27,6 +27,7 @@
 (transient-mark-mode 1)
 (show-paren-mode 1)
 (column-number-mode 1)
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq inhibit-startup-screen t)
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
