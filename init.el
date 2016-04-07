@@ -107,6 +107,12 @@
 	 ("M-M" . helm-swoop-back-to-last-point))
   :init
   (bind-key "M-m" 'helm-swoop-from-isearch isearch-mode-map))
+(use-package helm-ag
+  :ensure helm-ag
+  :bind ("M-p" . helm-projectile-ag)
+  :commands (helm-ag helm-projectile-ag)
+  :init (setq helm-ag-insert-at-point 'symbol
+	      helm-ag-command-option "--path-to-agignore ~/.agignore"))
 
 (use-package projectile
   :ensure t
