@@ -198,3 +198,7 @@
 (use-package slim-mode
   :ensure t
   :mode ("\\.slim\\'" . slim-mode))
+
+(use-package yaml-mode
+  :ensure t
+  :mode ("\\.ya?ml\\'" . yaml-mode))
