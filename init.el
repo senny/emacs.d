@@ -202,3 +202,14 @@
 (use-package yaml-mode
   :ensure t
   :mode ("\\.ya?ml\\'" . yaml-mode))
+
+(use-package web-mode
+  :ensure t
+  :mode (("\\.erb\\'" . web-mode)
+	 ("\\.mustache\\'" . web-mode)
+	 ("\\.html?\\'" . web-mode)
+         ("\\.php\\'" . web-mode))
+  :config (progn
+            (setq web-mode-markup-indent-offset 2
+		  web-mode-css-indent-offset 2
+		  web-mode-code-indent-offset 2)))
