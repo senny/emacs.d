@@ -149,6 +149,7 @@
 		  enh-ruby-deep-indent-paren nil
 		  enh-ruby-bounce-deep-indent t
 		  enh-ruby-hanging-indent-level 2)
+	    (setq enh-ruby-program "/Users/senny/.rbenv/versions/2.4.0/bin/ruby")
 	    (setq ruby-insert-encoding-magic-comment nil)))
 
 (use-package rubocop
