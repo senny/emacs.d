@@ -64,11 +64,6 @@
   :ensure t
   :commands (ag ag-regexp ag-project))
 
-(use-package tester
-  :load-path "vendor/tester.el"
-  :bind (("M-e" . tester-run-test-file))
-  :commands (tester-run-test-file tester-run-test-suite))
-
 (use-package twilight-bright-theme
   :ensure t
   :config (load-theme 'twilight-bright t))
@@ -159,22 +154,12 @@
 
 
 (use-package minitest
-  :load-path "~/Projects/minitest-emacs"
-  :config (progn
-	    (defun minitest-ruby-mode-hook ()
-	      (tester-init-test-run #'minitest-run-file "_test.rb$")
-	      (tester-init-test-suite-run #'minitest-verify-all))
-
-	    (add-hook 'enh-ruby-mode-hook 'minitest-ruby-mode-hook)))
+  :ensure t
+  :defer t)
 
 (use-package rspec-mode
   :ensure t
-  :defer t
-  :config (progn
-	    (defun rspec-ruby-mode-hook ()
-	      (tester-init-test-run #'rspec-run-single-file "_spec.rb$")
-	      (tester-init-test-suite-run #'rake-test))
-	    (add-hook 'enh-ruby-mode-hook 'rspec-ruby-mode-hook)))
+  :defer t)
 
 (use-package rbenv
   :ensure t
