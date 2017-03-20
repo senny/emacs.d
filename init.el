@@ -37,6 +37,9 @@
 
 (server-start)
 
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (cons "/usr/local/bin" exec-path))
+
 ;; Bootstrap `use-package'
 (require 'package)
 (setq package-enable-at-startup nil)
