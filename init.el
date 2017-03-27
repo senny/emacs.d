@@ -178,7 +178,9 @@
 (use-package drag-stuff
   :ensure t
   :bind (("M-<up>" . drag-stuff-up)
-	 ("M-<down>" . drag-stuff-down)))
+	 ("M-<down>" . drag-stuff-down)
+	 ("M-<left>" . shift-left)
+	 ("M-<right>" . shift-right)))
 
 (use-package magit
   :ensure t
