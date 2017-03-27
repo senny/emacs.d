@@ -193,6 +193,10 @@
   :ensure t
   :mode ("\\.ya?ml\\'" . yaml-mode))
 
+(use-package markdown-mode
+  :ensure t
+  :mode ("\\.md\\'" . markdown-mode))
+
 (use-package web-mode
   :ensure t
   :mode (("\\.erb\\'" . web-mode)
