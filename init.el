@@ -34,6 +34,7 @@
 
 (electric-pair-mode 1)
 (remove-trailing-whitespace-mode)
+(setq-default require-final-newline 'visit-save)
 
 (server-start)
 
@@ -68,8 +69,6 @@
   :ensure t
   :config (load-theme 'twilight-bright t))
 
-(use-package helm-core
-  :ensure t)
 (use-package helm
   :ensure t
   :bind (("M-a" . helm-M-x)
