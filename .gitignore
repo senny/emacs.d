@@ -1,5 +1,7 @@
 /auto-save-list/
 /.cask/
+/eshell/
+/recentf
 
 /tmp/*
 !/tmp/.keep
