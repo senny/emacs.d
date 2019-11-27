@@ -58,7 +58,6 @@
 (use-package ido
   :config
   (setq ido-enable-flex-matching t)
-  (ido-everywhere t)
   (ido-mode 1))
 
 (use-package ag
@@ -144,7 +143,7 @@
 		  enh-ruby-deep-indent-paren nil
 		  enh-ruby-bounce-deep-indent t
 		  enh-ruby-hanging-indent-level 2)
-	    (setq enh-ruby-program "/Users/senny/.rbenv/versions/2.4.0/bin/ruby")
+	    (setq enh-ruby-program "/Users/senny/.rbenv/versions/2.6.5/bin/ruby")
 	    (setq ruby-insert-encoding-magic-comment nil)))
 
 (use-package rubocop
@@ -214,3 +213,28 @@
   :defer t
   :ensure t
   :mode ("\\.go$" . go-mode))
+
+(use-package swift-mode
+  :bind (:map swift-mode-map
+	      ("M-i" . nil)
+	      ("M-j" . nil)
+	      ("M-l" . nil)
+	      ("M-k" . nil)
+	      ("M-I" . nil)
+	      ("M-K" . nil)
+	      ("M-h" . nil)
+	      ("M-H" . nil)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yaml-mode web-mode use-package twilight-bright-theme swift-mode slim-mode rubocop rspec-mode rbenv minitest markdown-mode magit helm-swoop helm-projectile helm-descbinds helm-ag go-mode flycheck enh-ruby-mode drag-stuff diminish ag))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
