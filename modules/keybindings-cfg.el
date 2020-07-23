@@ -113,6 +113,7 @@
 (global-set-key (kbd "C-'") 'senny-kill-buffer)
 (global-set-key (kbd "C-c i") 'indent-buffer)
 (global-set-key (kbd "C-c n") 'senny-cleanup-buffer)
+(global-set-key (kbd "C-o") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
