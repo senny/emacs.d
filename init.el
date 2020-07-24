@@ -143,7 +143,7 @@
 		  enh-ruby-deep-indent-paren nil
 		  enh-ruby-bounce-deep-indent t
 		  enh-ruby-hanging-indent-level 2)
-	    (setq enh-ruby-program "/Users/senny/.rbenv/versions/2.6.5/bin/ruby")
+	    (setq enh-ruby-program "/Users/senny/.asdf/installs/ruby/2.6.6/bin/ruby")
 	    (setq ruby-insert-encoding-magic-comment nil)))
 
 (use-package rubocop
@@ -215,6 +215,7 @@
   :mode ("\\.go$" . go-mode))
 
 (use-package swift-mode
+  :ensure t
   :bind (:map swift-mode-map
 	      ("M-i" . nil)
 	      ("M-j" . nil)

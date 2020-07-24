@@ -9,6 +9,8 @@
 /elpa/*
 !/elpa/.keep
 
+/transient/*
+
 projectile.cache
 projectile-bookmarks.eld
 
